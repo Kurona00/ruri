@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const frames = [];
         let imagesLoaded = 0;
         let currentFrame = 0;
-        const fps = 24;
+        const fps = 12;
         const fpsInterval = 1000 / fps;
         let then = Date.now();
 
