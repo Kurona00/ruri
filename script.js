@@ -57,11 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Image Sequence Animation
     if (heroCanvas) {
         const ctx = heroCanvas.getContext('2d');
-        const frameCount = 120;
+        const frameCount = 288;
         const frames = [];
         let imagesLoaded = 0;
         let currentFrame = 0;
-        const fps = 12;
+        const fps = 24;
         const fpsInterval = 1000 / fps;
         let then = Date.now();
 
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let i = 1; i <= frameCount; i++) {
             const img = new Image();
             const index = i.toString().padStart(3, '0');
-            img.src = `assets/hero-frames/ezgif-frame-${index}.jpg`;
+            img.src = `assets/hero-frames/ezgif-frame-${index}.webp`;
             img.onload = () => {
                 imagesLoaded++;
                 if (imagesLoaded === 1) {
