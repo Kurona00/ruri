@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Image Sequence Animation
     if (heroCanvas) {
         const ctx = heroCanvas.getContext('2d');
-        const frameCount = 25;
+        const frameCount = 120;
         const frames = [];
         let imagesLoaded = 0;
         let currentFrame = 0;
